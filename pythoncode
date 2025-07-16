@@ -52,3 +52,8 @@ idli_data = [
     }
 ]
 emp.insert_many(idli_data)
+def get_all_employees():
+    employees = emp.find()
+    return list(employees)
+    print("Employees in the database:",employees)
+
